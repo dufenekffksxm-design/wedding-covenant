@@ -7,14 +7,14 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="천용진 · 황현정 결혼 언약식">
 <meta property="og:description" content="2026. 05. 31. 일요일 오후 3시 · 진실한숲교회">
-<meta property="og:image" content="https://dufenekffksxm-design.github.io/wedding-covenant/og_image.png">
+<meta property="og:image" content="https://dufenekffksxm-design.github.io/wedding/og_image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="천용진 황현정 결혼 언약식">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="천용진 · 황현정 결혼 언약식">
 <meta name="twitter:description" content="2026. 05. 31. 일요일 오후 3시 · 진실한숲교회">
-<meta name="twitter:image" content="https://dufenekffksxm-design.github.io/wedding-covenant/og_image.png">
+<meta name="twitter:image" content="https://dufenekffksxm-design.github.io/wedding/og_image.png">
 <title>천용진 · 황현정 결혼 언약식</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -188,6 +188,35 @@
   }
   .order-item.highlight .order-name { color: var(--accent); font-weight: 700; }
 
+  /* 성경 본문 */
+  .scripture-box {
+    margin: 1.75rem 0;
+    padding: 1.5rem 1.25rem;
+    border-top: 0.5px solid var(--line);
+    border-bottom: 0.5px solid var(--line);
+  }
+  .scripture-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 12px; letter-spacing: 0.4em;
+    color: var(--accent); text-align: center; margin-bottom: 0.4rem; text-transform: uppercase;
+  }
+  .scripture-ref {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 11px; letter-spacing: 0.15em;
+    color: var(--ink-muted); text-align: center; margin-bottom: 1.25rem; font-weight: 400;
+  }
+  .scripture-text {
+    font-family: var(--font-title);
+    font-size: 13.5px; color: var(--ink-soft);
+    line-height: 2; letter-spacing: 0.02em;
+    word-break: keep-all;
+  }
+  .scripture-text .verse-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 11px; color: var(--accent); font-weight: 500;
+    vertical-align: super; margin-right: 2px;
+  }
+
   /* 공동체 응답 */
   .response-box {
     background: linear-gradient(180deg, rgba(168, 184, 154, 0.08) 0%, rgba(168, 184, 154, 0.04) 100%);
@@ -225,6 +254,42 @@
     font-size: 10px; color: var(--gold); letter-spacing: 0.2em; margin-right: 0.5rem;
     padding: 2px 8px; background: rgba(184, 149, 106, 0.12); border-radius: 2px; vertical-align: 2px; font-weight: 400;
   }
+
+  /* 찬양 가사 */
+  .hymn-section {
+    margin: 1.75rem 0;
+    padding: 1.5rem 1.25rem;
+    background: linear-gradient(180deg, rgba(184, 149, 106, 0.06) 0%, rgba(184, 149, 106, 0.02) 100%);
+    border-radius: 6px;
+    border: 0.5px solid var(--line);
+  }
+  .hymn-label {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 12px; letter-spacing: 0.4em;
+    color: var(--gold); text-align: center; margin-bottom: 0.4rem; text-transform: uppercase;
+  }
+  .hymn-name {
+    font-family: var(--font-title);
+    font-size: 20px; color: var(--ink); text-align: center; margin-bottom: 0.25rem;
+    letter-spacing: 0.1em; padding-left: 0.1em;
+  }
+  .hymn-composer {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 10px; color: var(--ink-muted); text-align: center; margin-bottom: 1.25rem;
+    letter-spacing: 0.1em; font-weight: 400;
+  }
+  .hymn-verse-label {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 10px; letter-spacing: 0.3em;
+    color: var(--accent); margin-bottom: 0.5rem; font-weight: 400; padding-left: 0.3em;
+  }
+  .hymn-lyrics {
+    font-family: var(--font-title);
+    font-size: 13.5px; color: var(--ink-soft);
+    line-height: 2; letter-spacing: 0.02em;
+    word-break: keep-all; margin-bottom: 1rem;
+  }
+  .hymn-lyrics:last-child { margin-bottom: 0; }
 
   /* 푸터 */
   .footer { text-align: center; padding-top: 1.5rem; border-top: 0.5px solid var(--line); }
@@ -264,6 +329,10 @@
     .order-name { font-size: 14.5px; }
     .order-sub { font-size: 10px; }
     .response-box { padding: 1.25rem 1rem; }
+    .scripture-box { padding: 1.25rem 1rem; }
+    .scripture-text { font-size: 13px; line-height: 1.9; }
+    .hymn-section { padding: 1.25rem 1rem; }
+    .hymn-lyrics { font-size: 13px; line-height: 1.9; }
     .response-q { font-size: 12px; }
     .response-a { font-size: 13.5px; }
     .footer p { font-size: 11.5px; }
@@ -400,6 +469,21 @@
     </ul>
   </section>
 
+  <section class="scripture-box">
+    <p class="scripture-title">Scripture Reading</p>
+    <p class="scripture-ref">창세기 2장 18-25절 (새번역)</p>
+    <div class="scripture-text">
+      <span class="verse-num">18</span>주 하나님이 말씀하셨다. "사람이 혼자 있는 것이 좋지 않으니, 그에게 알맞은 짝을 만들어 주겠다."
+      <span class="verse-num">19</span>주 하나님이 흙으로 들의 모든 짐승과 공중의 모든 새를 지으시고, 아담에게로 이끌어 오셔서, 아담이 어떻게 이름을 짓는가를 보셨다. 아담이 각 생물에게 붙여 준 이름이, 그대로 그 생물의 이름이 되었다.
+      <span class="verse-num">20</span>아담이 모든 집짐승과 공중의 새와 들의 모든 짐승에게 이름을 지어 주었다. 그러나 아담에게는 알맞은 짝이 없었다.
+      <span class="verse-num">21</span>주 하나님이 아담을 깊이 잠들게 하셨다. 아담이 잠든 사이에, 주 하나님이 그의 갈빗대 하나를 빼내고, 그 자리를 살로 메우셨다.
+      <span class="verse-num">22</span>주 하나님이 아담에게서 빼낸 갈빗대로 여자를 만드시고, 그를 아담에게로 데려오셨다.
+      <span class="verse-num">23</span>그 때에 아담이 말하였다. "이제야 나타났구나, 내 뼈에서 나온 뼈, 내 살에서 나온 살, 남자에게서 나왔으니 여자라고 부르리라."
+      <span class="verse-num">24</span>그러므로 남자가 아버지와 어머니를 떠나서, 아내와 결합하여, 둘이 한 몸이 된다.
+      <span class="verse-num">25</span>아담과 그의 아내, 이 두 사람은 벌거벗고 있었으나, 부끄러워하지 않았다.
+    </div>
+  </section>
+
   <section class="response-box">
     <p class="response-title">Community Response</p>
     <p class="response-subtitle">공동체 서약에 다 함께 응답해 주십시오</p>
@@ -412,6 +496,55 @@
     <div class="response-pair">
       <p class="response-q">어려운 날이 올 때, 이 두 사람을 외면하지 않고 곁에 서 있겠다고 약속하시겠습니까?</p>
       <p class="response-a">예, 곁에 서겠습니다.</p>
+    </div>
+  </section>
+
+  <section class="hymn-section">
+    <p class="hymn-label">Hymn</p>
+    <p class="hymn-name">주의 가정</p>
+    <p class="hymn-composer">손경민 작사 · 작곡</p>
+
+    <div class="hymn-lyrics">
+      믿음으로 사는 가정은<br>
+      가난해도 부족하지 않게 하시며<br>
+      소망으로 사는 가정은<br>
+      아픔에도 더 풍성한 위로 주시네
+    </div>
+
+    <div class="hymn-lyrics">
+      마른 떡 하나에 화목하고<br>
+      함께 살아감에 감사하며<br>
+      고난이 올 때에 기도하는 가정<br>
+      하나님 돌보시네
+    </div>
+
+    <div class="hymn-lyrics">
+      주의 가정은 작은 천국이라<br>
+      주의 가정에 참된 행복 있네<br>
+      이 땅에 살아가는 모든 순간<br>
+      주가 지키시고 항상 인도하시리
+    </div>
+
+    <div class="hymn-lyrics">
+      마른 떡 하나에 화목하고<br>
+      함께 살아감에 감사하며<br>
+      고난이 올 때에 기도하는 가정<br>
+      하나님 돌보시네
+    </div>
+
+    <div class="hymn-lyrics">
+      주의 가정은 작은 천국이라<br>
+      주의 가정에 참된 행복 있네<br>
+      이 땅에 살아가는 모든 순간<br>
+      주가 지키시고 항상 인도하시리
+    </div>
+
+    <div class="hymn-lyrics">
+      주의 가정은 작은 천국이라<br>
+      주의 가정에 참된 행복 있네<br>
+      이 땅에 살아가는 모든 순간<br>
+      주가 지키시고 항상 인도하시리<br>
+      세상 끝날까지 항상 인도하시리
     </div>
   </section>
 
